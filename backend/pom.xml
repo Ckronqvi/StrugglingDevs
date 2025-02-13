@@ -67,7 +67,7 @@
 		<dependency>
       		<groupId>org.projectlombok</groupId>
       		<artifactId>lombok</artifactId>
-      		<optional>true</optional>
+      		<scope>compile</scope>
     	</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -104,7 +104,13 @@
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.12.6</version>
 		</dependency>
-		 
+
+		<!-- Web socket -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
