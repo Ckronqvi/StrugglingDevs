@@ -13,7 +13,7 @@ const MobileMenu = ({ menuOpen, path, setMenuOpen }) => {
 
   return (
     <div className="md:hidden">
-      <div className="flex flex-col items-center space-y-2 p-4 px-0.5">
+      <div className="flex mb-6 flex-col items-center space-y-2 p-4 px-0.5">
         {links.map(({ href, label }) => (
           <NextLink
             key={href}

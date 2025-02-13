@@ -3,12 +3,17 @@ import IconTray from "../components/iconTray";
 import LoginButton from "./loginButton";
 import Logo from "./logo";
 import MobileMenu from "./mobileMenu";
+import AnimatedGradientBackground from "./background";
 
 const Navbar = ({ path }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-opacity-50 backdrop-blur-lg z-50 md:pt-6 ">
+    <nav className="fixed w-full bg-opacity-50 backdrop-blur-lg z-50 md:pt-6">
+      <div className="md:hidden">
+        <AnimatedGradientBackground />
+      </div>
+
       <div className="flex items-center justify-evenly p-2">
         <Logo />
         <IconTray path={path} />

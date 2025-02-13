@@ -110,13 +110,13 @@ const Login = () => {
                   Login
                 </button>
               </div>
-              <div className="flex space-x-6">
+              <div className="flex min-[450px]:space-x-6 max-[450px]:flex-col max-[450px]:text-center">
                 <p>Forgot your password?</p>
                 <Link
                   href="\password-recovery"
                   className="font-medium text-blue-400 hover:underline"
                 >
-                  Reset password{" "}
+                  Reset password
                 </Link>
               </div>
               <p className="text-center mt-10 font-medium">OR</p>

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import AnimatedGradientBackground from "../components/background";
 
 const MainLayout = ({ children, router }) => {
   return (
@@ -14,9 +13,8 @@ const MainLayout = ({ children, router }) => {
         <title>Struggling Devs</title>
       </Head>
       <Navbar path={router.asPath} />
-      <main className="container mx-auto max-w-7xl pt-20 flex-1 mt-14">
+      <main className="container mx-auto max-w-7xl pt-10 flex-1 mt-14">
         {children}
-        <AnimatedGradientBackground />
       </main>
       <Footer />
     </div>
